@@ -8,5 +8,5 @@ Vagrant.configure('2') do |config|
 
   config.vm.provision :shell, path: 'bootstrap.sh', keep_color: true
 
-  config.vm.synced_folder "./app/", "/home/vagrant/app"
+  config.vm.synced_folder "./", "/home/vagrant"
 end
